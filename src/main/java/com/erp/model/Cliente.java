@@ -146,4 +146,7 @@ public class Cliente {
     public void setDescuentos(List<Descuento> descuentos) { this.descuentos = descuentos; }
     public void añadirDescuento(Descuento descuento) { this.descuentos.add(descuento); }
 
+    public boolean esEmpresa(){ return "Empresa".equals(tipoCliente.get()); }
+    public boolean esParticular(){ return "Particular".equals(tipoCliente.get());}
+
 }
